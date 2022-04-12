@@ -1,3 +1,4 @@
+// lst stands for Longest Common Subsequence
 const longestCommonSubsequence = (item1, item2) => {
   const table = Array.from({ length: item1.length + 1 }, () =>
     new Array(item2.length + 1).fill("")
