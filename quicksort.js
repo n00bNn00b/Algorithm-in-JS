@@ -1,6 +1,7 @@
 // quicksort solution
 
 const quickSort = (array) => {
+  // returning the array if there is no more than 1 element in the array
   if (array.length === 1) {
     return array;
   }
@@ -11,6 +12,7 @@ const quickSort = (array) => {
 
   // here I am using es6 for loop instead of traditional for loop and ternary operator. You may use traditional for loop if you're comfortable with it. If needed also the traditional for loop, I may add later. I have used spread operator too instead of using array.push(something) to reduce code.
   for (const element of array.slice(0, array.length - 1)) {
+    //   ternary operator like if else condition in traditional coding
     element < pivot ? leftArr.push(element) : rightArr.push(element);
   }
   // recursion
